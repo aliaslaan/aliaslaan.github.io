@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Blogum Başlıyor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogum | PDF Arşivi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+        }
+
+        .pdf-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .pdf-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pdf-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #f1f5f9;
+            transition: background 0.2s;
+        }
+
+        .pdf-item:last-child {
+            border-bottom: none;
+        }
+
+        .pdf-item:hover {
+            background-color: #f8fafc;
+        }
+
+        .pdf-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #ef4444;
+        }
+
+        .pdf-info {
+            flex-grow: 1;
+        }
+
+        .pdf-name {
+            font-weight: 500;
+            display: block;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .pdf-name:hover {
+            color: var(--primary-color);
+        }
+
+        .pdf-meta {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .download-btn {
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Merhaba, bu benim yeni blogum!</h1>
-    <p>Çok yakında burada harika içerikler olacak.</p>
-</body>
-</html>
+
+<div class="container">
+    <header>
+        <h1>Merhaba, bu benim yeni blogum!</h1>
